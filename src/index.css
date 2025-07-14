@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+20&display=swap');
+
+:root {
+  --light-yellow: #FFA42D;
+  --dark-bg: #F6F6F6;
+  --text-primary: #161818;
+  --text-second: #161818A3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #4646464D;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #464646CC;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.cards_section {
+    padding: 0 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .game_cards {
+        margin-top: 64px;
+
+        .game_cards_title {
+            padding: 8px 0 8px 24px;
+            margin-bottom: 16px;
+            font-size: 40px;
+            font-weight: 400;
+            font-family: "Jersey 20", sans-serif;
+        }
+
+        .game_row_cards {
+            display: grid;
+            align-items: start;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .see_more_button {
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-top: 24px;
+            background-color: transparent;
+            border: 2px solid var(--text-primary);
+            width: 240px;
+            height: 48px;
+            color: var(--text-primary);
+            font-family: "Jersey 20", sans-serif;
+        }
+    }
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    .cards_section {
+        .game_cards {
+            .game_row_cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .cards_section {
+        .game_cards {
+            .game_row_cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .cards_section {
+        padding: 0 16px;
+
+        .game_cards {
+            .game_cards_title {
+                padding: 8px 0 8px 8px;
+            }
+
+            .game_row_cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

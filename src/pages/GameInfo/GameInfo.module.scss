@@ -1,0 +1,227 @@
+.game_info {
+    max-width: 1280px;
+    padding: 0 32px;
+    margin: 0 auto;
+    margin-top: 48px;
+
+    .game_content {
+        display: flex;
+        gap: 80px;
+
+        .game_gallery {
+            display: flex;
+            gap: 32px;
+
+            .swiper_container {
+                height: 440px;
+                width: 440px;
+
+                .slide_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+
+                    &:hover {
+                        cursor: grab;
+                    }
+                }
+            }
+
+            // :global(.swiper-slide-thumb-active) {
+            //     border: 1px solid #ffff00;
+            // }
+
+            .thumb_slide {
+                width: 80px;
+                height: 80px !important;
+                cursor: pointer;
+
+                .thumb_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .game_detail {
+            .game_detail_title {
+                font-size: 52px;
+                font-weight: 400;
+                font-family: "Jersey 20", sans-serif;
+                margin-bottom: 16px;
+            }
+
+            .game_detail_discount {
+                padding: 4px 12px;
+                background-color: var(--light-yellow);
+                color: #fff;
+                font-family: "Jersey 20", sans-serif;
+                font-size: 28px;
+                line-height: 140%;
+                border-radius: 4px;
+                width: fit-content;
+                margin-bottom: 16px;
+            }
+
+            .game_detail_description {
+                font-size: 18px;
+                color: #161818A3;
+                margin-bottom: 24px;
+                white-space: pre-line;
+                line-height: 160%;
+
+            }
+
+            .game_detail_oldprice {
+                font-family: "Jersey 20", sans-serif;
+                font-size: 28px;
+                line-height: 140%;
+                color: #AEAFAF;
+            }
+
+            .game_detail_price {
+                font-family: "Jersey 20", sans-serif;
+                font-size: 40px;
+            }
+
+            .game_detail_buttons {
+                margin-top: 24px;
+                display: flex;
+                gap: 24px;
+
+                .game_detail_counter {
+                    display: flex;
+                    align-items: center;
+
+
+                    .game_detail_counter_btn {
+                        font-size: 32px;
+                        height: 48px;
+                        width: 32px;
+                        color: #FFFFFF;
+                        color: var(--text-primary);
+                        font-family: "Jersey 20", sans-serif;
+                        border: 2px solid var(--text-primary);
+                        filter: drop-shadow(4px 4px 0px var(--text-primary));
+                    }
+
+                    .game_detail_counter_value {
+                        font-family: "Jersey 20", sans-serif;
+                        line-height: 150%;
+                        font-size: 24px;
+                        width: 64px;
+                        text-align: center;
+                    }
+                }
+
+                .add_to_cart {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    text-transform: uppercase;
+                    width: 100%;
+                    font-family: "Jersey 20", sans-serif;
+                    font-size: 24px;
+                    color: #fff;
+                    height: 48px;
+                    border: 2px solid #FFFFFF;
+                    background-color: var(--light-yellow);
+                    filter: drop-shadow(4px 4px 0px #fff);
+                }
+            }
+        }
+    }
+
+    .game_specifications {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .game_specifications_item {
+            padding: 24px 32px;
+            border-radius: 16px;
+            border: 1px solid #16181829;
+
+            .game_specifications_title {
+                font-size: 18px;
+                color: #161818A3;
+                line-height: 160%;
+            }
+
+            .game_specifications_desc {
+                font-family: "Jersey 20", sans-serif;
+                font-size: 32px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .game_info {
+        .game_content {
+            display: flex;
+            gap: 40px;
+
+            .game_gallery {
+                flex-direction: column;
+
+                .thumbs_swiper {
+                    max-width: 440px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .game_info {
+        .game_content {
+            flex-direction: column;
+
+            .game_gallery {
+                flex-direction: column;
+
+                .thumbs_swiper {
+                    max-width: 440px;
+                }
+            }
+
+            .game_detail {
+                .game_detail_buttons {
+                    .add_to_cart {
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .game_info {
+        padding: 0 16px;
+
+        .game_content {
+            .game_gallery {
+                .swiper_container {
+                    max-height: 440px;
+                    height: 100%;
+                    max-width: 440px;
+                    width: 100%;
+                }
+            }
+             .game_detail {
+                .game_detail_buttons {
+                    flex-direction: column;
+                    .add_to_cart {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

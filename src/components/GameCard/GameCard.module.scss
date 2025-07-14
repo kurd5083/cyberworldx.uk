@@ -1,0 +1,84 @@
+.game_card {
+	position: relative;
+	padding: 16px 14px;
+	border: 1px solid #16181814;
+	background-color: #fff;
+
+	.game_img {
+		background: #fff;
+		border: 1px solid #16181814;
+		width: 100%;
+	}
+
+	.game_info {
+		padding: 24px 8px;
+
+		.game_title {
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 8px;
+		}
+
+		.game_oldprice {
+			color: #16181852;
+		}
+
+		.game_price {
+			font-family: "Jersey 20", sans-serif;
+			font-size: 32px;
+		}
+		.game_preorder {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			top: 24px;
+			left: 24px;
+			height: 30px;
+			background-color: var(--text-primary);
+			padding: 0 8px;
+			color: #fff;
+			font-family: "Jersey 20", sans-serif;
+			font-size: 28px;
+		}
+		.game_discount {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 32px;
+			right: -13px;
+			width: 78px;
+			height: 30px;
+			background-color: var(--light-yellow);
+			clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+			color: #fff;
+			font-family: "Jersey 20", sans-serif;
+			font-size: 28px;
+		}
+	}
+}
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    .cards_section {
+        .game_cards {
+
+            .game_row_cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 576px) {
+.game_card {
+overflow: hidden;
+}
+}

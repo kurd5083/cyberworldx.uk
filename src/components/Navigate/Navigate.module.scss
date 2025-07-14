@@ -1,0 +1,36 @@
+.navigate {
+    padding: 0 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    .navigate_list {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 16px;
+
+        li {
+            padding: 8px;
+            font-size: 18px;
+            line-height: 160%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navigate {
+        padding: 0 16px;
+        margin-top: 16px;
+
+        .navigate_list {
+            padding: 8px 0;
+
+            li {
+                padding: 8px 0;
+            }
+        }
+    }
+}

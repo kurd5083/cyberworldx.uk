@@ -1,0 +1,39 @@
+.about {
+    max-width: 1280px;
+    padding: 0 32px;
+    margin: 0 auto;
+    margin-top: 64px;
+
+    .about_head {
+        font-size: 52px;
+        font-weight: 400;
+        font-family: "Jersey 20", sans-serif;
+        margin-bottom: 40px;
+    }
+
+    .about_block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        p {
+            color: var(--text-second);
+            font-size: 18px;
+            line-height: 160%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        margin-top: 32px;
+        padding: 0 16px;
+
+    }
+}
