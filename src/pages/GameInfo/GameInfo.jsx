@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import styles from "./GameInfo.module.scss";
 import { useParams } from 'react-router-dom'
 import { products } from "../../data/products";
@@ -18,7 +18,13 @@ const GameInfo = () => {
   const game = products.find((p) => p.id == id)
   const { addToCart } = useCartStore();
   const allImages = game.cover ? [game.cover, ...game.screenshots] : [];
+  const swiperRef = useRef(null);
 
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(0);
+    }
+  }, [id]);
   useEffect(() => {
     if (isAdded) {
       const timer = setTimeout(() => setIsAdded(false), 2000);
@@ -55,6 +61,7 @@ const GameInfo = () => {
         <div className={styles.game_content}>
           <div className={styles.game_gallery}>
             <Swiper
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
               slidesPerView="auto"
               spaceBetween={10}
               modules={[Thumbs]}
@@ -143,7 +150,7 @@ const GameInfo = () => {
           </div>
         </div>
       </section>
-      <CategoryProductsList categories={categories} />
+      <CategoryProductsList like={game.like}  />
     </>
   )
 }

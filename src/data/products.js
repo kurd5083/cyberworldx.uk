@@ -29,6 +29,7 @@ import screenshots1 from '/src/assets/screenshots1.png';
 import screenshots2 from '/src/assets/screenshots2.png';
 import screenshots3 from '/src/assets/screenshots3.png';
 import screenshots4 from '/src/assets/screenshots4.png';
+
 export const products = [
   {
     id: 1,
@@ -36,11 +37,12 @@ export const products = [
     price: 468.99,
     discount: 15,
     cover: product_img_1,
-    description: "The Pikachu Edition is a special version of Nintendo’s iconic Game Boy Color, released to celebrate Pokémon’s global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu1. \n\n Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
+    description: "The Pikachu Edition is a special version of Nintendo's iconic Game Boy Color, released to celebrate Pokémon's global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu1. \n\n Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "new"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 2,
@@ -48,11 +50,12 @@ export const products = [
     price: 349.99,
     discount: null,
     cover: product_img_2,
-    description: "The Pikachu Edition is a special version of Nintendo’s iconic Game Boy Color, released to celebrate Pokémon’s global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu. Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
+    description: "The Pikachu Edition is a special version of Nintendo's iconic Game Boy Color, released to celebrate Pokémon's global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu. Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "new"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [2, 3, 4, 5, 6]
   },
   {
     id: 3,
@@ -60,11 +63,12 @@ export const products = [
     price: 520.99,
     discount: 17,
     cover: product_img_3,
-    description: "The Pikachu Edition is a special version of Nintendo’s iconic Game Boy Color, released to celebrate Pokémon’s global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu. Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
+    description: "The Pikachu Edition is a special version of Nintendo's iconic Game Boy Color, released to celebrate Pokémon's global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu. Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.",
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "new"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 4,
@@ -76,7 +80,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "new"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 5,
@@ -88,7 +93,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "preorder"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 6,
@@ -100,7 +106,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "preorder"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 7,
@@ -112,7 +119,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "preorder"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 8,
@@ -124,7 +132,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["consoles", "preorder"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 9,
@@ -136,7 +145,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["unboxed_games", "like", "unboxed"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 10,
@@ -148,7 +158,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["unboxed_games", "like", "unboxed"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 11,
@@ -160,7 +171,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["unboxed_games", "like", "unboxed"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 12,
@@ -172,7 +184,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ["unboxed_games", "like", "unboxed"],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 13,
@@ -184,11 +197,12 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 14,
-    title: "The Legend of Zelda: A Link to the Past	",
+    title: "The Legend of Zelda: A Link to the Past",
     price: 45.00,
     discount: null,
     cover: product_img_14,
@@ -196,7 +210,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 15,
@@ -208,7 +223,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 16,
@@ -220,7 +236,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 17,
@@ -232,7 +249,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 18,
@@ -244,7 +262,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 19,
@@ -256,7 +275,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 20,
@@ -268,7 +288,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 21,
@@ -280,7 +301,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 22,
@@ -292,7 +314,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 23,
@@ -304,7 +327,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 24,
@@ -316,7 +340,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 25,
@@ -328,7 +353,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 26,
@@ -340,7 +366,8 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
   },
   {
     id: 27,
@@ -352,6 +379,7 @@ export const products = [
     releaseDate: "releaseDate",
     amountPlayers: '1-2',
     category: ['games'],
-    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4]
-  },
+    screenshots: [screenshots1, screenshots2, screenshots3, screenshots4],
+    like: [1, 2, 3, 4, 5]
+  }
 ];
