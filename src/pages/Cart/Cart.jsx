@@ -5,11 +5,12 @@ import close from '/src/assets/close.svg';
 import check_icon from '/src/assets/check_icon.svg';
 import CategoryProductsList from "../../components/CategoryProductsList/CategoryProductsList";
 
+const categories = [
+  { key: "like", title: "You may also like" },
+];
+
 const Cart = () => {
   const { products, removeFromCart, updateQuantity, clearCart, totalItems, totalPrice, totalDiscountPrice } = useCartStore();
-  const categories = [
-    { key: "like", title: "You may also like" },
-  ];
   const [email, setEmail] = useState("");
   const [promo, setPromo] = useState("");
   const [selectedItems, setSelectedItems] = useState([]);

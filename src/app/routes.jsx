@@ -10,6 +10,7 @@ import GameInfo from "../pages/GameInfo/GameInfo";
 import Contacts from '../pages/Contacts/Contacts';
 import Cart from '../pages/Cart/Cart';
 import About from '../pages/About/About';
+import Catrgory from '../pages/Catrgory/Catrgory';
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: '/games/game/:id', element: <GameInfo /> },
       { path: '/cart', element: <Cart /> },
+      { path: '/catrgory/:subcategory', element: <Catrgory /> },
       { path: '/terms_service', element: <TermsService /> },
       { path: '/privacy_policy', element: <PrivacyPolicy /> },
       { path: '/refund_policy', element: <RefundPolicy /> },

@@ -19,6 +19,10 @@
             color: #16181852;
             white-space: nowrap;
 
+            &::first-letter {
+                text-transform: uppercase;
+            }
+
             &:last-child {
                 color: var(--text-primary);
             }

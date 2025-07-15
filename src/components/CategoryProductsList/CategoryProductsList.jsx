@@ -34,7 +34,6 @@ const CategoryProductsList = ({ categories }) => {
                     product => product.category.find((c) => c === category.key)
                 );
 
-                // Пропускаем пустые категории
                 if (categoryProducts.length === 0) return null;
 
                 const showAll = expandedCategories[category.key];

@@ -50,7 +50,7 @@ const GameInfo = () => {
 
   return (
     <>
-      <Breadcrumbs name={game.title} />
+      <Breadcrumbs name={game.title} category={game.category}/>
       <section className={styles.game_info}>
         <div className={styles.game_content}>
           <div className={styles.game_gallery}>
