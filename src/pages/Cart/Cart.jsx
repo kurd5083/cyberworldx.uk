@@ -3,7 +3,9 @@ import styles from "./Cart.module.scss";
 import { useCartStore } from '../../store/cartStore';
 import close from '/src/assets/close.svg';
 import check_icon from '/src/assets/check_icon.svg';
+import check_icon_white from '/src/assets/check_icon_white.svg';
 import CategoryProductsList from "../../components/CategoryProductsList/CategoryProductsList";
+import { Link } from "react-router";
 
 const categories = [
   { key: "like", title: "You may also like" },
@@ -90,15 +92,21 @@ const Cart = () => {
                       <button
                         className={`${styles.product_item_select} ${selectedItems.includes(product.id) && styles.product_item_select_active}`}
                         onClick={() => selectedCard(product.id)}
-                      ></button>
-                      <img
-                        src={product.cover}
-                        alt={product.title}
-                        className={styles.product_image}
-                      />
+                      >
+                        {selectedItems.includes(product.id) && (<img src={check_icon_white} alt="" />)}
+                      </button>
+                      <Link to={`/games/game/${product.id}`}>
+                        <img
+                          src={product.cover}
+                          alt={product.title}
+                          className={styles.product_image}
+                        />
+                      </Link>
                       <div className={styles.product_details}>
                         <div className={styles.product_details_content}>
+                          <Link to={`/games/game/${product.id}`}>
                           <h4 className={styles.product_details_name}>{product.title}</h4>
+                          </Link>
                           <p className={styles.product_details_desc}>The Pikachu Edition is a special version of Nintendo’s iconic Game Boy Color, released to celebrate Pokémon’s global success. It features a bright yellow casing, blue buttons, and exclusive artwork of Pikachu and Pichu.
                             Compact, durable, and battery-powered, it offers a vibrant color display and works with all Game Boy and Game Boy Color games. A perfect collectible for Pokémon fans and retro gamers alike.</p>
                         </div>

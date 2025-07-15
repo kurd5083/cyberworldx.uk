@@ -63,6 +63,30 @@
             gap: 24px;
             width: 100%;
 
+            .popup_form_container {
+                position: relative;
+
+                .popup_password {
+                    padding-right: 55px;
+                }
+
+                .eye_button {
+                    position: absolute;
+                    background-color: transparent;
+                    border: 0;
+                    top: 50%;
+                    right: 16px;
+                    transform: translateY(-50%);
+                    height: 24px;
+                    width: 24px;
+                    padding: 0;
+                    img {
+                        filter: brightness(0) saturate(100%) invert(16%) sepia(11%) saturate(1038%) hue-rotate(161deg) brightness(93%) contrast(87%);
+                        opacity: 0.32;
+                    }
+                }
+            }
+
             .popup_input {
                 font-size: 18px;
                 width: 100%;

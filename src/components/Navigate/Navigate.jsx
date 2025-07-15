@@ -1,5 +1,6 @@
 import styles from "./Navigate.module.scss";
 import { NavLink } from "react-router-dom";
+
 const navArr = [
   "games",
   "consoles",
@@ -10,6 +11,7 @@ const navArr = [
   "vhs",
   "books"
 ]
+
 const Navigate = () => {
   return (
     <nav className={styles.navigate}>

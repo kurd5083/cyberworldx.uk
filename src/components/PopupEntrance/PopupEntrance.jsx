@@ -5,6 +5,8 @@ import close from '/src/assets/close.svg';
 import logo_popup_icon from '/src/assets/logo_popup_icon.svg';
 import { popup_data } from '../../data/popup';
 import { useAuthStore } from "../../store/authStore";
+import eye_open_icon from "/src/assets/eye_open_icon.svg";
+import eye_close_icon from "/src/assets/eye_close_icon.svg";
 
 const PopupEntrance = () => {
     const { popup, openPopup, isPopupOpen, closePopup } = usePopupStore();
@@ -13,6 +15,7 @@ const PopupEntrance = () => {
     const [password, setPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
     const [error, setError] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const resetForm = () => {
         setEmail('');
@@ -75,15 +78,24 @@ const PopupEntrance = () => {
                         required
                         autoComplete="off"
                     />
+                    <div className={styles.popup_form_container}>
                     <input
                         className={`${styles.popup_input} ${styles.popup_password}`}
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         placeholder="Enter your Password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
                         autoComplete="new-password"
                     />
+                    <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className={styles.eye_button}
+                    >
+                        <img src={showPassword ? eye_open_icon : eye_close_icon} alt="Toggle password visibility" />
+                    </button>
+                    </div>
                     {popup.repeatPassword && (
                         <input
                             className={`${styles.popup_input} ${styles.popup_password}`}

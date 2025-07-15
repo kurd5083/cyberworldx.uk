@@ -6,7 +6,18 @@ import google_icon from '/src/assets/google_icon.svg'
 import visa_icon from '/src/assets/visa_icon.svg'
 import mastercard_icon from '/src/assets/mastercard_icon.svg'
 import klarna_icon from '/src/assets/klarna_icon.svg'
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
+const navArr = [
+  "games",
+  "consoles",
+  "accessories",
+  "unboxed_games",
+  "trading_cards",
+  "manuals",
+  "vhs",
+  "books"
+]
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -52,26 +63,27 @@ const Footer = () => {
           <div className={styles.links}>
             <h4 className={styles.links_title}>Categories</h4>
             <ul className={styles.links_list}>
-              <li><Link to="">Games</Link></li>
-              <li><Link to="">Consoles</Link></li>
-              <li><Link to="">Accessories</Link></li>
-              <li><Link to="">Unboxed Games</Link></li>
-              <li><Link to="">Trading Cards</Link></li>
-              <li><Link to="">Manuals</Link></li>
-              <li><Link to="">VHS</Link></li>
-              <li><Link to="">Books</Link></li>
+              {navArr.map((category) => (
+                <li key={category}>
+                  <NavLink to={`/catrgory/${category}`}>
+                    {category.split('_').map(word =>
+                      word.charAt(0).toUpperCase() + word.slice(1)
+                    ).join(' ')}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
           <div className={styles.links}>
             <h4 className={styles.links_title}>Links</h4>
             <ul className={styles.links_list}>
-              <li><Link to="/terms_service">Terms of Service</Link></li>
-              <li><Link to="/privacy_policy">Privacy Policy</Link></li>
-              <li><Link to="/refund_policy">Refund Policy</Link></li>
-              <li><Link to="/shipping_policy">Shipping Policy</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/contacts">Contact Us</Link></li>
-              <li><Link to="/payment_policy">Payment Policy</Link></li>
+              <li><NavLink to="/terms_service">Terms of Service</NavLink></li>
+              <li><NavLink to="/privacy_policy">Privacy Policy</NavLink></li>
+              <li><NavLink to="/refund_policy">Refund Policy</NavLink></li>
+              <li><NavLink to="/shipping_policy">Shipping Policy</NavLink></li>
+              <li><NavLink to="/about">About Us</NavLink></li>
+              <li><NavLink to="/contacts">Contact Us</NavLink></li>
+              <li><NavLink to="/payment_policy">Payment Policy</NavLink></li>
             </ul>
           </div>
         </section>

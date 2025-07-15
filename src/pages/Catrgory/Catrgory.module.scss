@@ -40,8 +40,7 @@
 
             .catrgory_header_select {
                 box-sizing: border-box;
-                max-width: 325px;
-                width: 100%;
+                width: 325px;
                 padding: 9px 16px;
                 border: 1px solid #16181829;
                 font-size: 18px;
@@ -99,6 +98,12 @@
             .catrgory_header_text {
                 .catrgory_header_title {
                     font-size: 52px;
+                }
+            }
+
+            .catrgory_header_sort {
+                .catrgory_header_select {
+                    width: 100%;
                 }
             }
         }
