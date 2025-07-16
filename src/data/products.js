@@ -1,4 +1,4 @@
-import product_img_1 from '/src/assets/product_img_1.png';
+import product_img_1 from '/src/assets/WEBPConverter - product_img_1.webp';
 import product_img_2 from '/src/assets/product_img_2.png';
 import product_img_3 from '/src/assets/product_img_3.png';
 import product_img_4 from '/src/assets/product_img_4.png';

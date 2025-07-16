@@ -94,7 +94,7 @@ const Reviews = () => {
               <img className={styles.reviews_block_ava} src={review.ava} alt={`${review.name} avatar`} />
               <div className={styles.reviews_block_content}>
                 <div className={styles.reviews_block_content_top}>
-                  <h5 className={styles.reviews_block_name}>{review.name}</h5>
+                  <h4 className={styles.reviews_block_name}>{review.name}</h4>
                   {review.verified && (
                     <p className={styles.reviews_block_verfied}>
                       <img src={check_circle_icon} alt="Success icon" />Verified
