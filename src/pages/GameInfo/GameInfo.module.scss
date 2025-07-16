@@ -211,11 +211,14 @@
                     height: 100%;
                     max-width: 440px;
                     width: 100%;
+                    aspect-ratio: 1 / 1;
                 }
             }
-             .game_detail {
+
+            .game_detail {
                 .game_detail_buttons {
                     flex-direction: column;
+
                     .add_to_cart {
                         max-width: 100%;
                     }
