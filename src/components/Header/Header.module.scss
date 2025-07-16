@@ -142,8 +142,6 @@
     .header {
         &::after {
             background: url('/src/assets/header_2.png') no-repeat top -330px right -300px / 1200px;
-            z-index: -2;
-            mix-blend-mode: plus-lighter;
         }
     }
 }
@@ -184,8 +182,6 @@
     .header {
         &::after {
             background: url('/src/assets/header_2.png') no-repeat top -245px right -250px / 900px;
-            z-index: -2;
-            mix-blend-mode: plus-lighter;
         }
     }
 }
@@ -195,8 +191,6 @@
     .header {
         &::after {
             background: url('/src/assets/header_2.png') no-repeat top -165px right -125px / 600px;
-            z-index: -2;
-            mix-blend-mode: plus-lighter;
         }
 
         .header_content {

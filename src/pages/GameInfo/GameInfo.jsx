@@ -56,7 +56,7 @@ const GameInfo = () => {
 
   return (
     <>
-      <Breadcrumbs name={game.title} category={game.category}/>
+      <Breadcrumbs name={game.title} category={game.category} />
       <section className={styles.game_info}>
         <div className={styles.game_content}>
           <div className={styles.game_gallery}>
@@ -144,13 +144,15 @@ const GameInfo = () => {
             <p className={styles.game_specifications_title}>Date of release</p>
             <p className={styles.game_specifications_desc}>{game.releaseDate}</p>
           </div>
-          <div className={styles.game_specifications_item}>
-            <p className={styles.game_specifications_title}>Amount of players</p>
-            <p className={styles.game_specifications_desc}>{game.amountPlayers}</p>
-          </div>
+          {game.amountPlayers && (
+            <div className={styles.game_specifications_item}>
+              <p className={styles.game_specifications_title}>Amount of players</p>
+              <p className={styles.game_specifications_desc}>{game.amountPlayers}</p>
+            </div>
+          )}
         </div>
       </section>
-      <CategoryProductsList like={game.like}  />
+      <CategoryProductsList like={game.like} />
     </>
   )
 }

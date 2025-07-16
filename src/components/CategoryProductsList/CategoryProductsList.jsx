@@ -44,7 +44,7 @@ const CategoryProductsList = ({ categories, like }) => {
       {isLikeMode ? (
         // Показываем избранные в одном блоке с кнопкой "See more"/"Show less"
         <div className={styles.game_cards}>
-          <h3 className={styles.game_cards_title}>Favorite Games</h3>
+          <h3 className={styles.game_cards_title}>You may also like</h3>
           <div className={styles.game_row_cards}>
             {(showAllFavorites
               ? likedProducts

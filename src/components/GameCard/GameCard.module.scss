@@ -5,9 +5,19 @@
 	background-color: #fff;
 
 	.game_img {
-		background: #fff;
-		border: 1px solid #16181814;
+		box-sizing: border-box;
 		width: 100%;
+		height: 100%;
+		max-width: 264px;
+		max-height: 264px;
+		aspect-ratio: 1 / 1;
+		border: 1px solid #16181814;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	.game_info {
@@ -27,6 +37,7 @@
 			font-family: "Jersey 20", sans-serif;
 			font-size: 32px;
 		}
+
 		.game_preorder {
 			position: absolute;
 			display: flex;
@@ -40,6 +51,7 @@
 			font-family: "Jersey 20", sans-serif;
 			font-size: 28px;
 		}
+
 		.game_discount {
 			display: flex;
 			align-items: center;
@@ -57,28 +69,31 @@
 		}
 	}
 }
+
 @media (max-width: 1400px) {}
 
 @media (max-width: 1200px) {
-    .cards_section {
-        .game_cards {
+	.cards_section {
+		.game_cards {
 
-            .game_row_cards {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-    }
+			.game_row_cards {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 
 @media (max-width: 576px) {
-.game_card {
-overflow: hidden;
-}
+	.game_card {
+		overflow: hidden;
+
+		.game_img {
+			max-width: 100%;
+		}
+	}
 }

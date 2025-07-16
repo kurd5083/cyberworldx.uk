@@ -50,7 +50,7 @@ export const useCartStore = create()(
 
 			totalDiscountPrice: () => {
 				console.log(get().products)
-				return get().products.reduce((total, product) => total + product.price * product.quantity / 100 * product.discount || 1, 0).toFixed(2)
+				return get().products.reduce((total, product) => total + product.price * product.quantity / 100 * product.discount || 0, 0).toFixed(2)
 			},
 			highlightItems: () => {
 

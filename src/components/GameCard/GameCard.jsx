@@ -5,7 +5,10 @@ const GameCard = ({ product }) => {
 
     return (
         <article className={styles.game_card}>
-            <Link to={`/games/game/${product.id}`}><img className={styles.game_img} src={product.cover} alt="Game cover" /></Link>
+            <div className={styles.game_img}>
+                <Link to={`/games/game/${product.id}`}><img src={product.cover} alt="Game cover" /></Link>
+            </div>
+            
             <div className={styles.game_info}>
                 <Link to={`/games/game/${product.id}`}>
                     <h4 className={styles.game_title}>{product.title}</h4>

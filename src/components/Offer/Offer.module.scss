@@ -149,9 +149,6 @@
                 background: url('/src/assets/header_3.png') no-repeat top center / 200%,
                     url('/src/assets/header_1.png') no-repeat top 200px left / cover,
                     linear-gradient(to left, #00000071, #0000005b);
-                background-blend-mode: overlay, color-dodge;
-                z-index: -1;
-                opacity: 16%;
             }
 
             &::after {
@@ -182,9 +179,6 @@
                 background: url('/src/assets/header_3.png') no-repeat top center / 300%,
                     url('/src/assets/header_1.png') no-repeat top 200px left / cover,
                     linear-gradient(to left, #00000071, #0000005b);
-                background-blend-mode: overlay, color-dodge;
-                z-index: -1;
-                opacity: 16%;
             }
 
             &::after {
@@ -212,9 +206,6 @@
                 background: url('/src/assets/header_3.png') no-repeat top center / 500%,
                     url('/src/assets/header_1.png') no-repeat top 200px left / cover,
                     linear-gradient(to left, #00000071, #0000005b);
-                background-blend-mode: overlay, color-dodge;
-                z-index: -1;
-                opacity: 16%;
             }
 
             &::after {
