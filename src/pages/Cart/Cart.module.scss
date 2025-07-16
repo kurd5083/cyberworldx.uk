@@ -75,6 +75,7 @@
         .cart_content_left_btn_del {
           border: 1px solid #16181829;
           background-color: #1618180A;
+          color: var(--text-primary);
         }
       }
 
@@ -173,6 +174,7 @@
                   background: #1618180A;
                   font-family: "Jersey 20", sans-serif;
                   font-size: 32px;
+                  color: var(--text-primary);
                 }
 
                 .quantity_input {
