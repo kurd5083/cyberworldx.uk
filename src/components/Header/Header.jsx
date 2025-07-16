@@ -48,7 +48,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header_content}>
         <section className={styles.header_left}>
-          <img onClick={() => navigate('/')} src={logo_icon} alt="" />
+          <img onClick={() => navigate('/')} src={logo_icon} alt="Company logo, homepage link" />
           <input
             className={styles.header_input}
             type="text"
@@ -78,11 +78,11 @@ onClick={() => logout()}
             </>
           )}
           <button onClick={() => navigate('/cart')} className={`${styles.basket}`}>
-            <img src={basket_icon} alt="" />
+            <img src={basket_icon} alt="Shopping basket icon" />
             <span className={`${styles.basket_quantity}`}>{totalItems() || 0}</span>
           </button>
           <button className={`${styles.burger}`}>
-            <img src={burger_icon} alt="" />
+            <img src={burger_icon} alt="Menu icon" />
           </button>
         </section>
       </div>

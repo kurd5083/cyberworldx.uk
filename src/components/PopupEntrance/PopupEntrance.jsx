@@ -63,9 +63,9 @@ const PopupEntrance = () => {
                     className={styles.popup_close}
                     onClick={() => closePopup()}
                 >
-                    <img src={close} alt="" />
+                    <img src={close} alt="Close" />
                 </button>
-                <img className={styles.popup_logo} src={logo_popup_icon} alt="" />
+                <img className={styles.popup_logo} src={logo_popup_icon} alt="Company logo" />
                 <h2 className={styles.popup_title}>{popup.title}</h2>
                 <p className={styles.popup_desc}>{popup.desc}</p>
                 <form className={styles.popup_form} onSubmit={handleSubmit}>

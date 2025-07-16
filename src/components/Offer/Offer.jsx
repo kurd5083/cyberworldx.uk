@@ -18,9 +18,9 @@ const Offer = () => {
   return (
     <section className={styles.offer_container}>
       <div className={styles.offer}>
-        <img className={styles.offer_banner_img} src={banner_img} alt="" />
-        <img className={styles.offer_banner_img_2} src={banner_img_2} alt="" />
-        <img className={styles.offer_banner_img_3} src={banner_img_3} alt="" />
+        <img className={styles.offer_banner_img} src={banner_img} alt="Special offer banner" />
+        <img className={styles.offer_banner_img_2} src={banner_img_2} alt="Special offer banner" />
+        <img className={styles.offer_banner_img_3} src={banner_img_3} alt="Special offer banner" />
         <div className={styles.offer_conent}>
           <h3 className={styles.offer_conent_title}>
             Surprise! Enjoy a <span>50% Discount</span> on Your First Purchase

@@ -133,7 +133,7 @@ const GameInfo = () => {
                 onClick={handleAddToCart}
                 disabled={isAdded}
               >
-                <img src={shopping_cart_icon} alt="" />
+                <img src={shopping_cart_icon} alt="Shopping cart icon" />
                 {isAdded ? 'Added!' : 'Add to Cart'}
               </button>
             </div>

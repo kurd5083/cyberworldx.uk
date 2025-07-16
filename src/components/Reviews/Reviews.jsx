@@ -91,20 +91,20 @@ const Reviews = () => {
         {reviewsData.map((review) => (
           <article key={review.id} className={styles.reviews_block}>
             <header className={styles.reviews_block_header}>
-              <img className={styles.reviews_block_ava} src={review.ava} alt="" />
+              <img className={styles.reviews_block_ava} src={review.ava} alt={`${review.name} avatar`} />
               <div className={styles.reviews_block_content}>
                 <div className={styles.reviews_block_content_top}>
                   <h5 className={styles.reviews_block_name}>{review.name}</h5>
                   {review.verified && (
                     <p className={styles.reviews_block_verfied}>
-                      <img src={check_circle_icon} alt="" />Verified
+                      <img src={check_circle_icon} alt="Success icon" />Verified
                     </p>
                   )}
                 </div>
                 <div className={styles.reviews_block_content_bottom}>
                   <p className={styles.reviews_block_reviews}>{review.reviewsCount} reviews</p>
                   <p className={styles.reviews_block_location}>
-                    <img src={location_icon} alt="" />{review.location}
+                    <img src={location_icon} alt="Location icon" />{review.location}
                   </p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const Reviews = () => {
               <div className={styles.reviews_block_stars}>
                 <div className={styles.reviews_block_star}>
                   {review.stars.map((starImg, index) => (
-                    <img key={index} src={starImg} alt="" />
+                    <img key={index} src={starImg} alt="Star" />
                   ))}
                 </div>
                 <time className={styles.reviews_block_date} dateTime={review.date}>

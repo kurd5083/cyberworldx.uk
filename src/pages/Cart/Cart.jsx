@@ -75,14 +75,14 @@ const Cart = () => {
                     className={`${styles.cart_content_left_btn_all} ${styles.cart_content_left_btn}`}
                     onClick={() => selectedAllCard()}
                   >
-                    <img src={check_icon} alt="" />
+                    <img src={check_icon} alt="Selected" />
                     Select all
                   </button>
                   <button
                     className={`${styles.cart_content_left_btn_del} ${styles.cart_content_left_btn}`}
                     onClick={() => deleteSelected()}
                   >
-                    <img src={close} alt="" />
+                    <img src={close} alt="Delete" />
                     Delete selected
                   </button>
                 </div>
@@ -93,7 +93,7 @@ const Cart = () => {
                         className={`${styles.product_item_select} ${selectedItems.includes(product.id) && styles.product_item_select_active}`}
                         onClick={() => selectedCard(product.id)}
                       >
-                        {selectedItems.includes(product.id) && (<img src={check_icon_white} alt="" />)}
+                        {selectedItems.includes(product.id) && (<img src={check_icon_white} alt="Selected" />)}
                       </button>
                       <Link to={`/games/game/${product.id}`}>
                         <img
@@ -149,7 +149,7 @@ const Cart = () => {
                             className={styles.product_details_del}
                             onClick={() => deleteSelected(product.id)}
                           >
-                            <img src={close} alt="" />
+                            <img src={close} alt="Close" />
                           </button>
                         </div>
                       </div>

@@ -35,7 +35,7 @@ const Footer = () => {
       <div className={styles.footer_content}>
         <section className={styles.footer_top}>
           <div className={styles.order_request}>
-            <Link to="/"><img className={styles.footer_logo} src={logo_icon} alt="" /></Link>
+            <Link to="/"><img className={styles.footer_logo} src={logo_icon} alt="Company logo" /></Link>
             <div className={styles.order_request_content}>
               <h3 className={styles.footer_top_title}>Submit Your Order Request</h3>
               <p className={styles.footer_top_desc}>Leave your email below — your personal promo code is coming soon!</p>
@@ -89,11 +89,11 @@ const Footer = () => {
         </section>
         <section className={styles.footer_bottom}>
           <div className={styles.footer_payment_method}>
-            <img src={apple_icon} alt="" />
-            <img src={google_icon} alt="" />
-            <img src={visa_icon} alt="" />
-            <img src={mastercard_icon} alt="" />
-            <img src={klarna_icon} alt="" />
+            <img src={apple_icon} alt="Apple logo" />
+            <img src={google_icon} alt="Google logo" />
+            <img src={visa_icon} alt="Visa logo" />
+            <img src={mastercard_icon} alt="Mastercard logo" />
+            <img src={klarna_icon} alt="Klarna logo" />
           </div>
           <p className={styles.footer_copyright}>Copyright © 2025</p>
         </section>
