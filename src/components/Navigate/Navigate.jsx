@@ -1,22 +1,11 @@
 import styles from "./Navigate.module.scss";
 import { NavLink } from "react-router-dom";
-
-const navArr = [
-  "games",
-  "consoles",
-  "accessories",
-  "unboxed_games",
-  "trading_cards",
-  "manuals",
-  "vhs",
-  "books"
-]
+import { navArr } from "../../data/navigate";
 
 const Navigate = () => {
   return (
     <nav className={styles.navigate}>
       <ul className={styles.navigate_list}>
-
         {navArr.map((category) => (
           <li key={category}>
             <NavLink

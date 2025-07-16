@@ -1,0 +1,169 @@
+.burger_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #16181829;
+    backdrop-filter: blur(24px);
+    z-index: 1002;
+    display: flex;
+    justify-content: flex-end;
+
+    .burger_menu {
+        overflow-y: auto;
+        position: relative;
+        box-sizing: border-box;
+        width: 320px;
+        height: 100vh;
+        background-color: #161818;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .burger_menu_header {
+
+            .burger_menu_img {
+                width: 130px;
+            }
+
+            .close_button {
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        .burger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: transparent;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fff;
+            min-height: 48px;
+
+            .burger_ico {
+                width: 24px;
+                height: 24px;
+            }
+
+            .burger_title {
+                font-family: "Jersey 20", sans-serif;
+                font-size: 24px;
+            }
+
+            .burger_quantity {
+                background-color: #fff;
+                border-radius: 32px;
+                width: 28px;
+                line-height: 150%;
+                font-size: 14px;
+                font-weight: 600;
+                color: #000000;
+            }
+        }
+
+        .burger_search_block {
+            position: relative;
+
+            .burger_input {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 9.5px 16px 9.5px 48px;
+                border: 1px solid #FFFFFF29;
+                color: #fff;
+                font-size: 18px;
+                line-height: 160%;
+                background: url('/src/assets/search.svg') no-repeat left 16px top 50%, #292A2A;
+
+                &::placeholder {
+                    color: #FFFFFF52;
+                }
+            }
+
+            .burger_navigate {
+                margin-top: 16px;
+                color: #fff;
+
+                .burger_navigate_list {
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        font-family: "Jersey 20", sans-serif;
+                        font-size: 28px;
+                        padding: 8px;
+                        line-height: 140%;
+
+                        a {
+                            padding-bottom: 8px;
+                        }
+
+                        .active {
+                            border-bottom: 2px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger_buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .burger_btn {
+                text-transform: uppercase;
+                width: 100%;
+                font-size: 24px;
+                height: 48px;
+            }
+
+            .burger_mail {
+                text-transform: uppercase;
+                font-size: 24px;
+                font-family: "Jersey 20", sans-serif;
+                color: #fff;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .login {
+                background-color: #FFA32B14;
+                color: var(--light-yellow);
+                border: 1px solid #FFA32B3D;
+                font-family: "Jersey 20", sans-serif;
+            }
+
+            .register {
+                color: #FFFFFF;
+                background-color: var(--light-yellow);
+                font-family: "Jersey 20", sans-serif;
+                border: 2px solid #fff;
+                filter: drop-shadow(4px 4px 0px #fff);
+            }
+
+            .logout {
+                background-color: transparent;
+                color: #fff;
+                border: 2px solid #fff;
+                font-family: "Jersey 20", sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .burger_overlay {
+        .burger_menu {
+            width: 100%;
+        }
+    }
+}

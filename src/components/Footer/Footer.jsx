@@ -7,17 +7,7 @@ import visa_icon from '/src/assets/visa_icon.svg'
 import mastercard_icon from '/src/assets/mastercard_icon.svg'
 import klarna_icon from '/src/assets/klarna_icon.svg'
 import { NavLink, Link } from "react-router-dom";
-
-const navArr = [
-  "games",
-  "consoles",
-  "accessories",
-  "unboxed_games",
-  "trading_cards",
-  "manuals",
-  "vhs",
-  "books"
-]
+import { navArr } from "../../data/navigate";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
