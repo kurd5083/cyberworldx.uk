@@ -98,8 +98,7 @@
                     .game_detail_counter_btn {
                         font-size: 32px;
                         height: 48px;
-                        width: 32px;
-                        color: #FFFFFF;
+                        width: 32px !important;
                         color: var(--text-primary);
                         font-family: "Jersey 20", sans-serif;
                         border: 2px solid var(--text-primary);
