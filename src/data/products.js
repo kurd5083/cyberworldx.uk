@@ -176,19 +176,6 @@ export const products = [
     like: [1, 4, 7, 8, 9]
   },
   {
-    id: 11,
-    title: "Super Nintendo Entertainment System (SNES)",
-    price: 150,
-    discount: 26,
-    category: ["consoles"],
-    cover: getProductImage(1, ["consoles"]),
-    description: "The Super Nintendo Entertainment System (SNES) is a beloved retro video game console that was released in the early 1990s. It is a 16-bit console known for its iconic design, robust game library, and superior graphics and audio capabilities.\n\nThe SNES is a platform that offers a wide range of games across various genres, including action, adventure, RPG, platformers, and sports. Some of the most popular titles for the SNES include Super Mario World, The Legend of Zelda: A Link to the Past, Super Metroid, and Super Mario Kart.\n\nOne of the standout features of the SNES is its Mode 7 graphics mode, which allowed for rotating and scaling backgrounds that were ahead of its time. The console also introduced the Super FX chip, which enabled more advanced 3D graphics in certain games.\n\nThe SNES has a rich history in the gaming industry, being the successor to the original Nintendo Entertainment System (NES) and competing with the Sega Genesis in the console wars of the early 1990s. The SNES ultimately won over the hearts of gamers with its superior graphics and sound capabilities, as well as its robust game library.\n\nIf you're a fan of retro gaming or looking to experience classic titles from the 16-bit era, the SNES is a must-have console. With its iconic design, rich game library, and innovative features, the SNES offers hours of nostalgic gameplay that is sure to bring back fond memories of gaming in the '90s.",
-    releaseDate: "1990-11-21",
-    amountPlayers: "1-2",
-    screenshots: getScreenshots(1, ["consoles"]),
-    like: [12, 13, 14, 15, 16]
-  },
-  {
     id: 12,
     title: "Sega Genesis",
     price: 200,
@@ -199,7 +186,7 @@ export const products = [
     releaseDate: "1988-10-29",
     amountPlayers: "1-2",
     screenshots: getScreenshots(2, ["consoles"]),
-    like: [11, 13, 14, 17, 18]
+    like: [19, 13, 14, 17, 18]
   },
   {
     id: 13,
@@ -212,7 +199,7 @@ export const products = [
     releaseDate: "1994-09-09",
     amountPlayers: "1-2",
     screenshots: getScreenshots(3, ["consoles"]),
-    like: [11, 12, 14, 15, 19]
+    like: [20, 12, 14, 15, 19]
   },
   {
     id: 14,
@@ -225,7 +212,7 @@ export const products = [
     releaseDate: "1996-06-23",
     amountPlayers: "1-4",
     screenshots: getScreenshots(4, ["consoles"]),
-    like: [11, 13, 15, 16, 17]
+    like: [19, 13, 15, 16, 17]
   },
   {
     id: 15,
@@ -238,7 +225,7 @@ export const products = [
     releaseDate: "1999-11-27",
     amountPlayers: "1-4",
     screenshots: getScreenshots(5, ["consoles"]),
-    like: [11, 13, 14, 17, 18]
+    like: [19, 13, 14, 17, 18]
   },
   {
     id: 16,
@@ -251,7 +238,7 @@ export const products = [
     releaseDate: "1987-10-30",
     amountPlayers: "1-5",
     screenshots: getScreenshots(6, ["consoles"]),
-    like: [11, 12, 14, 19, 20]
+    like: [15, 12, 14, 19, 20]
   },
   {
     id: 17,
@@ -303,7 +290,7 @@ export const products = [
     releaseDate: "1982-08-01",
     amountPlayers: "1-2",
     screenshots: getScreenshots(10, ["consoles"]),
-    like: [16, 18, 19, 11, 12]
+    like: [16, 18, 19, 17, 12]
   },
   {
     id: 21,
