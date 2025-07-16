@@ -54,8 +54,8 @@ const BurgerMenu = () => {
                     <img
                         className={styles.burger_menu_img}
                         onClick={() => {
-                            navigate('/');
                             closeMenu();
+                            navigate('/');
                         }
                         }
                         src={logo_icon}
@@ -66,8 +66,8 @@ const BurgerMenu = () => {
                     </button>
                 </div>
                 <button onClick={() => {
-                    navigate('/cart')
                     closeMenu()
+                    navigate('/cart')
                 }} className={styles.burger}>
                     <img className={styles.burger_ico} src={basket_icon} alt="Shopping basket icon" />
                     <span className={styles.burger_title}>CART</span>
@@ -117,15 +117,16 @@ const BurgerMenu = () => {
                         <button
                             className={`${styles.burger_btn} ${styles.login}`}
                             onClick={() => {
-                                openPopup(popup_data.login);
                                 closeMenu();
+                                openPopup(popup_data.login);
+                                
                             }}
                         >Login</button>
                         <button
                             className={`${styles.burger_btn} ${styles.register}`}
                             onClick={() => {
-                                openPopup(popup_data.register);
                                 closeMenu();
+                                openPopup(popup_data.register);
                             }}
                         >Register</button>
                     </div>

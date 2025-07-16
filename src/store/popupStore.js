@@ -5,7 +5,7 @@ export const usePopupStore = create((set, get) => ({
 
     openPopup: (popupData) => {
         document.body.style.overflowY = 'hidden';
-        set({ popup: popupData }); // true или объект с данными
+        set({ popup: popupData });
     },
 
     closePopup: () => {
