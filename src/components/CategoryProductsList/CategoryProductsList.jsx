@@ -28,21 +28,18 @@ const CategoryProductsList = ({ categories, like }) => {
     }));
   };
 
-  // Проверяем, передан ли массив liked id
+
   const isLikeMode = Array.isArray(like);
 
-  // Если like массив — получаем товары по id из like
   const likedProducts = isLikeMode
     ? products.filter((product) => like.includes(product.id))
     : [];
 
-  // В режиме избранных используем ключ "favorites" для expandedCategories
   const showAllFavorites = expandedCategories["favorites"];
 
   return (
     <section className={styles.cards_section}>
       {isLikeMode ? (
-        // Показываем избранные в одном блоке с кнопкой "See more"/"Show less"
         <div className={styles.game_cards}>
           <h3 className={styles.game_cards_title}>You may also like</h3>
           <div className={styles.game_row_cards}>

@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom';
 import styles from "./GameCard.module.scss";
 
 const GameCard = ({ product }) => {
-
+    console.log(product)
     return (
         <article className={styles.game_card}>
             <div className={styles.game_img}>
                 <Link to={`/games/game/${product.id}`}><img src={product.cover} alt="Game cover" /></Link>
             </div>
-            
             <div className={styles.game_info}>
                 <Link to={`/games/game/${product.id}`}>
                     <h4 className={styles.game_title}>{product.title}</h4>
@@ -21,7 +20,7 @@ const GameCard = ({ product }) => {
                 ) : (
                     <p className={styles.game_price}>£{product.price}</p>
                 )}
-                  {product.category == 'preorder' && (
+                {product.category.includes('preorder') && (
                     <p className={styles.game_preorder}>PRE-ORDER</p>
                 )}
                 {product.discount && (<p className={styles.game_discount}>-{product.discount}%</p>)}
