@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
 		<section className={styles.policy}>
 			<h2 className={styles.policy_head}>Privacy Policy</h2>
 			<div className={styles.policy_block}>
-				<p>This Data Protection Guidelines outlines how cyberworldx.uk (the “Website” or “we”) gathers, utilizes, and shares your Personal Information when you browse or make a purchase from the Website.</p>
+				<p>This Data Protection Guidelines outlines how gamerelics.uk (the “Website” or “we”) gathers, utilizes, and shares your Personal Information when you browse or make a purchase from the Website.</p>
 			</div>
 			<h3 className={styles.policy_title}>Gathering Personal Information</h3>
 			<div className={`${styles.policy_block} ${styles.policy_block_children}`}>

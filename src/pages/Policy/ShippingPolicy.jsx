@@ -89,7 +89,7 @@ const ShippingPolicy = () => {
 			<h3 className={styles.policy_title}>Get in Touch</h3>
 			<div className={styles.policy_block}>
 				<p>For shipping-related questions:</p>
-				<p>📧 support@cyberworldx.uk</p>
+				<p>📧 support@gamerelics.uk</p>
 				<p>📞 +44 7483 256 917</p>
 			</div>
 		</section>

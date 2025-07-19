@@ -140,7 +140,7 @@ const PaymentPolicy = () => {
 			<h3 className={styles.policy_title}>Get in Touch with Us</h3>
 			<div className={styles.policy_block}>
 				<p>For any payment-related inquiries:</p>
-				<p>📧 support@cyberworldx.uk</p>
+				<p>📧 support@gamerelics.uk</p>
 				<p>📞 +44 7483 256 917</p>
 			</div>
 		</section>

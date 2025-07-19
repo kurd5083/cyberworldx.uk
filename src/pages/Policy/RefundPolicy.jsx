@@ -63,8 +63,8 @@ const RefundPolicy = () => {
 				<p>Responsibility of the Buyer: You are responsible for return shipping costs unless the return is due to our mistake (e.g., wrong item sent).</p>
 				<p>Pre-paid labels will be provided for damaged or defective items.</p>
 				<p>Return address:</p>
-				<p>CyberworldX Returns Department 12 Falcon Way, Bury St Edmunds Suffolk, IP28 7GR United Kingdom</p>
-				<p>📧 support@cyberworldx.uk</p>
+				<p>Gamerelics Returns Department 12 Falcon Way, Bury St Edmunds Suffolk, IP28 7GR United Kingdom</p>
+				<p>📧 support@gamerelics.uk</p>
 				<p>📞 +44 7483 256 917</p>
 			</div>
 		</section>
