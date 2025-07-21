@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import styles from "./GameCard.module.scss";
 
 const GameCard = ({ product }) => {
-    console.log(product)
     return (
         <article className={styles.game_card}>
             <div className={styles.game_img}>
