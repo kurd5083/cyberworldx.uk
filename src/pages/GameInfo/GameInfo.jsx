@@ -19,6 +19,7 @@ const GameInfo = () => {
   const { addToCart } = useCartStore();
   const allImages = game.cover ? [game.cover, ...game.screenshots] : [];
   const swiperRef = useRef(null);
+  
 
   useEffect(() => {
     if (swiperRef.current) {

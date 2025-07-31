@@ -1,9 +1,10 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
+RewriteEngine On
 
-  # Перенаправлять все запросы на index.html (кроме реальных файлов/папок)
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ index.html [L]
-</IfModule>
+# 1. Если URI — это корень сайта (/), отправляем на index.php
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /index.php [L]
+
+# 2. Если запрашиваемый путь НЕ существует (ни файл, ни папка) — отдать index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
